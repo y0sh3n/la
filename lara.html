@@ -1,111 +1,146 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-       <meta charset="UTF-8">
-       <title>Testes em Animais</title>
-       <link rel="stylesheet" href="style.css">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Produtos - Barbearia Alura</title>
 
-    </head>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="produtos.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png"></h1>
 
-    <body>
-       <header>
-        <h1 class= "titulo-principal">Testes em animais</h1>
-      </header>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-      <div class="principal">
-        <h2 class= "titulo-centralizado">É certo utilizar animais para testes cosméticos?</h2>
- 
-        <p>Os testes em animais são <strong>experimentos</strong> realizados em bichos, que podem se
-        chamar cobaias. Com o objetivo de descobrir se os produtos que estão sendo
-        testados irão fazer mal aos humanos.</p>
+		<main>
+			<ul class="produtos">
+				<li>
+					<h2>Cabelo</h2>
+					<img src="cabelo.jpg">
+					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="produto-preco">R$ 25,00</p>
+				</li>
+				<li>
+					<h2>Barba</h2>
+					<img src="barba.jpg">
+					<p class="produto-descricao">Corte e desenho profissional de barba</p>
+					<p class="produto-preco">R$ 18,00</p>
+				</li>
+				<li>
+					<h2>Cabelo + Barba</h2>
+					<img src="cabelo+barba.jpg">
+					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
+					<p class="produto-preco">R$ 35,00</p>
+				</li>
+			</ul>
+		</main>
 
-
-
-        <p id="missao" >Marcas que não fazem experimentos em animais:</p>
-        <p> <strong>Impala.</strong></p>
-        <p> <strong>OX Cosméticos.</strong></p>
-        <p> <strong>Mahogany.</strong></p>
-        <p> <strong>O Boticário.</strong></p>
-        <p> <strong>Racco.</strong></p>
-        <p> <strong>Natura.</strong></p>
-        <p> <strong>Eudora.</strong></p>
-
-
-
-        <p ><em>As experiências conduzidas em animais fazem parte do cotidiano da ciência 
-        há séculos</em>. No momento em que o ser humano começou a interferir ativamente
-        na natureza, por meio da agricultura, a relação com animais, consequentemente,
-        se alterou.</p>
-       </div>
- 
-       <div class="malefícios">
-       
-       <h3 class= "titulo-centralizado">Malefícios</h3>
-       
-        <ul>
-          <li class="itens"> Dores</li>
-          <li class="itens"> Cegueira</li>
-          <li class="itens"> Convulsões</li>
-          <li class="itens"> Queimaduras</li>
-          <li class="itens"> Hemorragias</li>
-        </ul>
-
-        <p>E principalmente, a morte do animal.</p>
-
-        <img src="imagens.jpeg" class="imagens">
-      </div>
-    </body>
+		<footer>
+			<img src="logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
 </html>
 
-body {
-    
- }
 
-.principal{
-	background: #FFFFFF
-	padding: 30px;
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
 }
 
-.titulo-principal{
-	padding-left: 20px;
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
 }
 
-.titulo-centralizado {
- 	text-align: center;
- }
-
-p {
-	text-align: center;
-}	
-
-#missao {
-	font-size: 20px;
-}
-  
-strong {
-	color: #FF0000;
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
 }
 
-.itens {
-	font-style: italic
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
 }
 
-.malefícios{
-	background: #CCCCCC;
-	padding: 20px;
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
 }
 
-ul{
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
 	display: inline-block;
-	vertical-align:top;
-	width: 20%;
-	margin-right: 15%;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
 }
 
-.imagens {
-	width:50%;
+.produtos li:hover {
+	border-color: #C78C19;
 }
 
+.produtos li:active {
+	border-color: #088C19;	
+}
 
+.produtos li:hover h2 {
+	font-size: 34px;
+}
 
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
 
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
